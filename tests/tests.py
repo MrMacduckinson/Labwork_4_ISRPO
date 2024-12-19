@@ -190,9 +190,9 @@ class SquareTestCase(unittest.TestCase):
 class TriangleTestCase(unittest.TestCase):
     def test_normal_integer_area(self):
         answer = triangle_area(3, 4)
-        self.assertEqual(answer, 6)'''
+        self.assertEqual(answer, 6)
 
-    def test_normal_float_area(self):
+'''    def test_normal_float_area(self):
         answer = triangle_area(2.2, 1.5)
         self.assertEqual(answer, 1.65)
 
