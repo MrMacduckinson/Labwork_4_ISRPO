@@ -3,11 +3,20 @@ name: Run tests
 on: [push]
 
 jobs:
-  build:
+  build-ubuntu:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-    - run: python -m unittest tests/tests.py
+    - run: python -m unittest tests.py
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - run: python -m unittest tests.py
