@@ -12,7 +12,7 @@ from geometric_lib.square import perimeter as square_perimeter
 from geometric_lib.triangle import area as triangle_area
 from geometric_lib.triangle import perimeter as triangle_perimeter
 
-'''class CircleTestCase(unittest.TestCase):
+class CircleTestCase(unittest.TestCase):
     def test_normal_integer_area(self):
         answer = circle_area(3)
         self.assertEqual(answer, (9 * math.pi))
@@ -186,13 +186,13 @@ class SquareTestCase(unittest.TestCase):
     def test_small_float_perimeter(self):
         answer = square_perimeter(0.00000000000000000000000000000000000000000000000000000013)
         self.assertEqual(answer, 0.00000000000000000000000000000000000000000000000000000052)
-'''
+
 class TriangleTestCase(unittest.TestCase):
     def test_normal_integer_area(self):
         answer = triangle_area(3, 4)
         self.assertEqual(answer, 6)
 
-'''    def test_normal_float_area(self):
+    def test_normal_float_area(self):
         answer = triangle_area(2.2, 1.5)
         self.assertEqual(answer, 1.65)
 
@@ -262,4 +262,4 @@ class TriangleTestCase(unittest.TestCase):
         answer = triangle_perimeter(0.0000000000000000123,
                                     0.00000000000000000013333,
                                     0.0000000000000000000000000000001)
-        self.assertEqual(answer, 0.0000000000000000124333300000001)'''
+        self.assertEqual(answer, 0.0000000000000000124333300000001)
